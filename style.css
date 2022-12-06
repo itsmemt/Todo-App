@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+header nav h1{
+   background-color: aquamarine;
+   text-align: center;
+   color: slategray;
+   text-transform: uppercase;
+   margin-bottom: -3px;
+   font-weight: 700;
+}
+#main{
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   padding: 20px 0;
+   background-color: slateblue;
+}
+.container{
+    max-width:60% ;
+    height: 80%;
+    border: 5px solid #0C2D48;
+    border-radius: 10px;
+    padding-top: 15px;
+    background-color: antiquewhite;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar{width:0 !important}
+.container .fas{
+    cursor: pointer;
+    background-color: slategray;
+    padding: 10px;
+    border-radius: 50%;
+    color: whitesmoke;
+}
+.title{
+    background-color: #0C2D48;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+#add-new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+.sub-title{
+    text-align: center;
+    font-size: 25px;
+    background-color: pink;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+#tasks{
+    margin: 5px 0;
+}
+#tasks div{
+    position: relative;
+    background-color: lightgreen;
+    border: 3px solid pink;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 3px;
+}
+#tasks div h5{
+    color: #0C2D48;
+    background-color: beige;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+#tasks div h6{
+    position: absolute;
+    top: 8px;
+    right: 10%;
+    color: slategrey;
+}
+#tasks div p{
+    background-color: bisque;
+    height: 10vh;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+#tasks div span{
+    background-color: antiquewhite;
+    padding: 6px 0;
+    border-radius: 10px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (max-width:750px) {
+    .container{
+        max-width: 90%;
+    }
+}
